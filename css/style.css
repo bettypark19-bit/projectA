@@ -927,17 +927,34 @@ button {
   z-index: 99999;
   background: white;
   width: 30%;
-  height: 300px;
-  padding: 40px 0px;
+  height: 350px;
   border-radius: 10px;
-  
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+}
+.popup::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: url(../images/Warning.png) no-repeat;
+  background-size: contain;
+}
+
+.popup .para{
+  margin-top: 180px;
 }
 .popup button{
   position: absolute;
   transform: translateX(-50%);
-
+  bottom: 45px;
   background: #020b3d;
   width: 150px;
   height: 50px;
   color: #fff;
+  border-radius: 7px;
+
 }
