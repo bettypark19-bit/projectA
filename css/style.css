@@ -927,7 +927,8 @@ button {
   z-index: 99999;
   background: white;
   width: 30%;
-  height: 350px;
+  min-width: 300px;
+  height: 380px;
   border-radius: 10px;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
 }
@@ -935,22 +936,22 @@ button {
   content: "";
   display: block;
   position: absolute;
-  top: 40px;
+  top: 45px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   background: url(../images/Warning.png) no-repeat;
   background-size: contain;
 }
 
 .popup .para{
-  margin-top: 180px;
+  margin-top: 200px;
 }
 .popup button{
   position: absolute;
   transform: translateX(-50%);
-  bottom: 45px;
+  bottom: 50px;
   background: #020b3d;
   width: 150px;
   height: 50px;
