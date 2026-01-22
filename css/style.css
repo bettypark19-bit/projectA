@@ -535,6 +535,12 @@ button {
   grid-template-columns: 400px 1fr;
   gap: 40px;
 }
+.book-items{
+  display: flex;
+  align-items: flex-end;
+}
+.book-main{
+}
 
 .book-main img {
   width: 100%;
