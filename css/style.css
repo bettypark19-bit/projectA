@@ -194,18 +194,20 @@ button {
   display: block;
   height: 910px;
 }
-.header-banner::before{
+.header-banner::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 910px;
   background: url(https://www.nanet.go.kr/attachfiles/carousel/1766390217987.jpg);
   background-size: cover;
   filter: blur(30px);
   opacity: 0.8;
-  
 }
 
 .banner-slider {
@@ -385,10 +387,11 @@ button {
 }
 
 .section-title {
-  font-size: 17px;
-  font-weight: 400;
+  margin-bottom: 37px;
+  font-size: 40px;
+  font-weight: 500;
   color: #333;
-  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .section-subtitle {
@@ -490,18 +493,18 @@ button {
 }
 
 .keywords-slider {
-    padding: 0 50px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    margin-top: 16px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 7px;
-    border: 1px solid #dbdbdb;
-    background-color: #fff;
+  padding: 0 50px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
 }
 
 .keywords-list {
@@ -512,7 +515,7 @@ button {
 }
 
 .keyword-tag {
-    margin-right: 58px;
+  margin-right: 58px;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 22px;
@@ -527,47 +530,90 @@ button {
 
 /* 신간도서 */
 .books-section {
+  padding: 100px 0;
+  margin: 0px 237px;
+  position: relative;
   background: white;
 }
 
 .books-container {
   display: grid;
-  grid-template-columns: 400px 1fr;
-  gap: 40px;
+  grid-template-columns: 302px 1fr;
+  gap: 72px;
 }
-.book-items{
+.book-items {
   display: flex;
   align-items: flex-end;
 }
-.book-main{
+.book-row {
+  margin-top: 36px;
 }
 
+.book-main {
+  position: relative;
+  width: 303px;
+  height: 440px;
+}
 .book-main img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  width: 303px;
+  height: 440px;
+  z-index: 2;
+}
+.book-main::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(225, 219, 219);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.book-right {
+  display: flex;
+  flex-direction: column;
+}
+.book-info {
+  width: 94%;
 }
 
 .book-info h3 {
-  font-size: 38px;
-  margin-bottom: 20px;
+  font-size: 26px;
+  color: #0066a6;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
 }
 
 .book-author {
-  font-size: 22px;
-  color: #666;
-  margin-bottom: 20px;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #777;
 }
 
 .book-desc {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #555;
+  margin-top: 22px;
+  line-height: 26px;
+  font-size: 17px;
+  color: #333;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
 }
 
 .book-thumbnails {
-  display: flex;
-  gap: 15px;
+  margin-right: 73px;
   margin-top: 30px;
 }
 
@@ -575,7 +621,6 @@ button {
   width: 152px;
   height: 222px;
   object-fit: cover;
-  border-radius: 4px;
 }
 
 /* 자료정보 */
@@ -592,13 +637,9 @@ button {
 .resource-card {
   position: relative;
   height: 440px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.5)
-  );
+  background: white;
+  border: 1px solid #c2b0a2;
   border-radius: 8px;
-  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -606,20 +647,32 @@ button {
 }
 
 .resource-badge {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: bold;
+  display: inline-block;
+  background: #f0f0f0;
+  border-radius: 16px;
+  padding: 7px 16px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.resource-card h3 {
-  font-size: 29px;
-  color: white;
-  line-height: 1.4;
+.resourceT {
+  position: absolute;
+  bottom: -15px;
+  padding: 30px;
+}
+
+.resource-card img {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.resource-card span {
+  display: block;
+  font-size: 20px;
+  margin-top: 18px;
+  height: 60px;
+  overflow: hidden;
 }
 
 /* 서평 & 큐레이션 */
@@ -942,7 +995,7 @@ button {
 /* ==================================팝업창================================= */
 /* ============================================================================= */
 
-.popup{
+.popup {
   text-align: center;
   position: fixed;
   top: 30%;
@@ -954,9 +1007,9 @@ button {
   min-width: 300px;
   height: 380px;
   border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
-.popup::after{
+.popup::after {
   content: "";
   display: block;
   position: absolute;
@@ -969,10 +1022,10 @@ button {
   background-size: contain;
 }
 
-.popup .para{
+.popup .para {
   margin-top: 200px;
 }
-.popup button{
+.popup button {
   position: absolute;
   transform: translateX(-50%);
   bottom: 50px;
@@ -981,5 +1034,4 @@ button {
   height: 50px;
   color: #fff;
   border-radius: 7px;
-
 }

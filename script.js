@@ -244,12 +244,16 @@ const cards = document.querySelectorAll(
 );
 cards.forEach((card) => {
   card.addEventListener("mouseenter", function () {
-    this.style.transform = "translateY(-5px)";
+    this.style.transform = "translateY(-15px)";
     this.style.transition = "transform 0.3s";
+    this.style.borderColor = '#4b83c4';
+    this.style.boxShadow = '0 4px 8px rgba(0, 0, 0, .2)';
   });
-
+  
   card.addEventListener("mouseleave", function () {
     this.style.transform = "translateY(0)";
+    this.style.borderColor = '#c2b0a2';
+    this.style.boxShadow = 'none';
   });
 });
 
