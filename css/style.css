@@ -5,6 +5,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: left;
+}
+
+h2 {
+    margin-bottom: 37px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #333;
+    font-weight: 700;
+}
+.plus{
+  position: absolute;
+  top: 125px;
+  right: 0px;
+  border-radius: 50%;
+  color: #999;
+  font-size: 1em;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c1c1c1;
+}
+.plus:hover{
+  border: 1px solid #0066a6;
+  background: #0066a6;
+  color: #fff;
 }
 
 body {
@@ -180,6 +207,7 @@ button {
 }
 
 .search-btn {
+  text-align: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -384,21 +412,22 @@ button {
 
 .section {
   padding: 100px 240px;
+  text-align: center;
 }
 
-.section-title {
-  margin-bottom: 37px;
-  font-size: 40px;
-  font-weight: 500;
-  color: #333;
-  font-weight: 700;
+
+.b-controller{
+  background: #c2b0a2;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
 
 .section-subtitle {
   font-size: 17px;
   font-weight: 400;
   color: #333;
-  margin-bottom: 40px;
+  margin: 10px 0;
 }
 
 /* 주제별 큐레이션 */
@@ -414,6 +443,7 @@ button {
 }
 
 .committee-btn {
+  text-align: center;
   width: 100%;
   height: 60px;
   background: #f0f0f0;
@@ -450,6 +480,11 @@ button {
   padding: 30px;
   box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.2);
   margin: 0px 20px;
+}
+
+.curation-card:hover{
+  background: #b8a28d;
+  font-weight: 700;
 }
 
 .curation-card h3 {
@@ -557,6 +592,7 @@ button {
 .book-main img {
   position: absolute;
   top: 0;
+  left: 0;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   width: 303px;
   height: 440px;
@@ -590,6 +626,8 @@ button {
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  line-clamp: 1;
+  box-orient: vertical;
   word-wrap: break-word;
 }
 
@@ -608,22 +646,36 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  line-clamp: 2;
   word-wrap: break-word;
 }
 
 .book-thumbnails {
+    width: 152px;
+  height: 222px;
   margin-right: 73px;
   margin-top: 30px;
+  transition:all 0.3s;
 }
 
 .book-thumbnails img {
-  width: 152px;
-  height: 222px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
+.book-thumbnails:hover{
+  transform:translateY(-15px);
+  transform: 0.3s;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .7);
+}
+
 /* 자료정보 */
+.resources-section .plus{
+  top: 116px;
+  right: 240px;
+}
+
 .resources-section {
   background: white;
 }
@@ -664,6 +716,7 @@ button {
 .resource-card img {
   position: absolute;
   top: 0px;
+  left: 0px;
   width: 100%;
 }
 
@@ -680,7 +733,7 @@ button {
   display: grid;
   grid-template-columns: 936px 1fr;
   gap: 50px;
-  background: white;
+  background: #f2f2f2;
 }
 
 .review-items {
@@ -689,16 +742,25 @@ button {
   gap: 20px;
 }
 
+.review-img{
+border: 1px solid #c7c7c7;
+width: 192px;
+height: 284px;
+border-radius: 12px;
+overflow: hidden;
+}
+
 .review-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-size: cover;
   border: 1px solid #ddd;
   margin-bottom: 10px;
 }
 
 .review-card h4 {
   font-size: 18px;
-  margin-bottom: 8px;
+  margin: 8px 0;
   line-height: 1.3;
 }
 
@@ -711,12 +773,15 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: #fff;
+  border-radius: 8px;
 }
 
 .curation-item {
   background: linear-gradient(135deg, #e8f4f8, #c2d9e6);
   padding: 30px;
   border-radius: 8px;
+  width: 392px;
   height: 180px;
 }
 
@@ -1023,9 +1088,11 @@ button {
 }
 
 .popup .para {
+  text-align: center;
   margin-top: 200px;
 }
 .popup button {
+  text-align: center;
   position: absolute;
   transform: translateX(-50%);
   bottom: 50px;
@@ -1035,3 +1102,5 @@ button {
   color: #fff;
   border-radius: 7px;
 }
+
+
