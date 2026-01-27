@@ -149,31 +149,7 @@ if (keywordsSlider) {
   }
 }
 
-// 스크롤 시 헤더 고정
-let lastScroll = 0;
-const header = document.querySelector(".header-top");
 
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-
-  if (currentScroll > 150) {
-    if (header) {
-      header.style.position = "fixed";
-      header.style.top = "0";
-      header.style.left = "0";
-      header.style.right = "0";
-      header.style.zIndex = "1000";
-      header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
-    }
-  } else {
-    if (header) {
-      header.style.position = "relative";
-      header.style.boxShadow = "none";
-    }
-  }
-
-  lastScroll = currentScroll;
-});
 
 // 검색창 포커스
 const searchInput = document.querySelector(".search-input input");
@@ -240,7 +216,7 @@ document.querySelectorAll(".section").forEach((section) => {
 
 // 카드 호버 효과
 const cards = document.querySelectorAll(
-  ".resource-card, .notice-card, .review-img",
+  ".resource-card, .review-img",
 );
 cards.forEach((card) => {
   card.addEventListener("mouseenter", function () {
