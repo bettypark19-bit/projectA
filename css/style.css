@@ -57,6 +57,14 @@ button {
   font-family: inherit;
 }
 
+.section-subtitle{
+    margin-top: -26px;
+    margin-bottom: 40px;
+    line-height: 20px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
 /* Header */
 .header {
   position: relative;
@@ -153,7 +161,7 @@ button {
 .gnb-nav {
   display: flex;
   gap: 130px;
-  padding-left: 150px;
+  padding-left: 300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -253,7 +261,7 @@ button {
   top: 151px;
   left: 0;
   width: 100%;
-  height: 910px;
+  height: 750px;
   background: rgba(22, 10, 43, 0.5);
   backdrop-filter: blur(13px);
 }
@@ -306,9 +314,11 @@ button {
   padding: 5px 0px;
   border-radius: 5px;
 }
+.banner-prev,.banner-next{
 
-.banner-controls button {
   color: white;
+}
+.banner-controls .banner-play{
   width: 8px;
   height: 8px;
 }
@@ -382,7 +392,6 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding: 16px 20px;
   flex: 1;
   transition: background 0.3s;
 }
@@ -406,12 +415,11 @@ button {
 .calendar-title {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .calendar-subtitle {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .calendar-dates {
@@ -449,13 +457,17 @@ button {
 }
 
 .b-controller {
+  top: auto;
+  right: 848px;
+  position: absolute;
   background: #c2b0a2;
   width: 28px;
   height: 28px;
   border-radius: 50%;
 }
 
-.section-subtitle {
+.issue-sub{
+  text-align: center;
   font-size: 17px;
   font-weight: 400;
   color: #333;
@@ -520,6 +532,8 @@ button {
 }
 
 .curation-card h3 {
+  width: 268px;
+  height: 67px;
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 60px;
@@ -556,7 +570,7 @@ button {
 /* 이슈 키워드 */
 .keywords-section {
   background: #f2f2f2;
-  padding: 40px 240px;
+  padding: 30px 240px;
 }
 
 .keywords-slider {
@@ -973,14 +987,17 @@ button {
 
 .webzine-main {
   position: relative;
+  top: -3px;
+  left: 0px;
   width: 303px;
-  height: 440px;
+  height: 436px;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.6)
   );
   border-radius: 8px;
+  border: 1px solid #ddd;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -988,14 +1005,24 @@ button {
   margin-bottom: 30px;
 }
 
+.webzine-main:hover{
+  border: 1px solid #0066a6;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
 .webzine-badge {
+  color: #fff;
   position: absolute;
-  top: 30px;
-  left: 30px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 16px;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.651);
+  padding: 2px 8px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+.webzine-main:hover>.webzine-badge{
+  background:#0066a6;
 }
 
 .webzine-main h3 {
@@ -1005,14 +1032,21 @@ button {
 }
 
 .webzine-list {
-  background: #f0f0f0;
-  padding: 30px;
-  border-radius: 8px;
+    top: 200px;
+    right: 225px;
+    position: absolute;
+    display: block;
 }
 
 .webzine-item {
-  font-size: 20px;
-  color: #333;
+ width: 333px;
+ height: 204px;
+}
+.webzine-swiper{
+  margin-top: 19px;
+  width: 333px;
+  height: 203px;
+  background: #b0c4d8;
 }
 
 .notice-container>.pnot{
