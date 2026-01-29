@@ -57,12 +57,12 @@ button {
   font-family: inherit;
 }
 
-.section-subtitle{
-    margin-top: -26px;
-    margin-bottom: 40px;
-    line-height: 20px;
-    font-size: 22px;
-    font-weight: 400;
+.section-subtitle {
+  margin-top: -26px;
+  margin-bottom: 40px;
+  line-height: 20px;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 /* Header */
@@ -129,7 +129,7 @@ button {
   padding: 0 60px;
   position: relative;
 }
-.gnb-logo{
+.gnb-logo {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -138,7 +138,7 @@ button {
   height: 50px;
 }
 
-.gnb h1{
+.gnb h1 {
   display: flex;
   position: absolute;
   top: 0px;
@@ -149,7 +149,7 @@ button {
   background-size: contain;
 }
 
-#headerSlogan{
+#headerSlogan {
   display: flex;
   position: absolute;
   top: 8px;
@@ -270,12 +270,11 @@ button {
   display: block;
   position: absolute;
   top: 151px;
-  left:0;
+  left: 0;
   width: 100%;
   height: 759px;
   background: url(https://www.nanet.go.kr/attachfiles/carousel/1766390217987.jpg);
   background-size: cover;
-
 }
 
 .banner-slider {
@@ -294,7 +293,7 @@ button {
   display: block;
 }
 
-.banner-item img {
+.banner-item .banner-swiper {
   position: absolute;
   top: -32px;
   left: 50%;
@@ -314,11 +313,11 @@ button {
   padding: 5px 0px;
   border-radius: 5px;
 }
-.banner-prev,.banner-next{
-
+.banner-prev,
+.banner-next {
   color: white;
 }
-.banner-controls .banner-play{
+.banner-controls .banner-play {
   width: 8px;
   height: 8px;
 }
@@ -350,7 +349,7 @@ button {
 
 .banner-tab {
   width: 325px;
-  padding: 18px 30px;
+  padding: 18px 0px;
   background: white;
   color: #333;
   font-size: 16px;
@@ -466,7 +465,7 @@ button {
   border-radius: 50%;
 }
 
-.issue-sub{
+.issue-sub {
   text-align: center;
   font-size: 17px;
   font-weight: 400;
@@ -873,12 +872,12 @@ button {
   opacity: 1;
 }
 
-.reviews-container>.pst {
+.reviews-container > .pst {
   top: 112px;
   right: 760px;
 }
 
-.curation-container>.pbq {
+.curation-container > .pbq {
   top: 112px;
   right: 230px;
 }
@@ -936,7 +935,7 @@ button {
   flex-direction: column;
   transition: all 0.3s;
 }
-.notice-card::before{
+.notice-card::before {
   position: absolute;
   content: "";
   display: block;
@@ -945,7 +944,6 @@ button {
   background: #999;
   top: 340px;
 }
-
 
 .notice-card h3 {
   font-size: 24px;
@@ -966,7 +964,7 @@ button {
   margin-top: auto;
 }
 
-.n-next{
+.n-next {
   color: #999;
   position: absolute;
   font-size: 2em;
@@ -974,16 +972,15 @@ button {
   right: 36px;
 }
 
-.notice-card:hover{
+.notice-card:hover {
   border: 1px solid #0066a6;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
-.notice-card:hover>button{
+.notice-card:hover > button {
   color: #0066a6;
   transform: translateX(10px);
 }
-
 
 .webzine-main {
   position: relative;
@@ -991,11 +988,8 @@ button {
   left: 0px;
   width: 303px;
   height: 436px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.6)
-  );
+  background: url('https://www.nanet.go.kr/attachfiles/webzine/1766473465112.jpg') no-repeat;
+  background-size: cover;
   border-radius: 8px;
   border: 1px solid #ddd;
   padding: 40px;
@@ -1005,7 +999,7 @@ button {
   margin-bottom: 30px;
 }
 
-.webzine-main:hover{
+.webzine-main:hover {
   border: 1px solid #0066a6;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
@@ -1021,40 +1015,48 @@ button {
   font-size: 15px;
 }
 
-.webzine-main:hover>.webzine-badge{
-  background:#0066a6;
+.webzine-main:hover > .webzine-badge {
+  background: #0066a6;
+}
+
+.webzine-main:hover h3{
+    color: #0066a6;
+  transform: translateX(10px);
 }
 
 .webzine-main h3 {
-  font-size: 24px;
-  color: white;
-  line-height: 1.4;
+    position: absolute;
+    right: 30px;
+    bottom: 36px;
+    font-size: 32px;
+  color: #999;
+    line-height: 1.4;
 }
 
 .webzine-list {
-    top: 200px;
-    right: 225px;
-    position: absolute;
-    display: block;
+  top: 200px;
+  right: 225px;
+  position: absolute;
+  display: block;
 }
 
 .webzine-item {
- width: 333px;
- height: 204px;
+  width: 333px;
+  height: 204px;
 }
-.webzine-swiper{
+.webzine-swiper {
   margin-top: 19px;
   width: 333px;
   height: 203px;
   background: #b0c4d8;
 }
 
-.notice-container>.pnot{
+.notice-container > .pnot {
   top: 111px;
   left: 902px;
 }
 
-.webzine-container>.pwz{
+.webzine-container > .pwz {
   top: 111px;
   right: 610px;
 }

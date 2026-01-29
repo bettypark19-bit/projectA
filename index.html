@@ -46,6 +46,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/book.png" />
+    <!-- //------------------------swiper----------------------------------- -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/swiper.css">
+    <script src="/js/swiper-bundle.min.js"></script>
     <!-- fontawesome 사이트와 번호 같은지 확인. 보통 첫 숫자만 맞으면 어느정도 됨 -->
     <link
       rel="stylesheet"
@@ -139,11 +143,49 @@
         <div class="mainvisual_group">
           <div class="main-slide">
             <div class="banner-item active">
-              <img
-                src="https://www.nanet.go.kr/attachfiles/carousel/1766390217987.jpg"
-                data-url="https://www.nanet.go.kr/attachfiles/carousel/1766390217987.jpg"
-                alt="세계헌법정보"
-              />
+              <div class="banner-swiper">
+                <div class="swiper Swiper-1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.nanet.go.kr/attachfiles/carousel/1768176896491.png"
+                        data-url="https://www.nanet.go.kr/attachfiles/carousel/1768176896491.png"
+                        alt="이슈 인포그래픽 : '2026 전망' 주요 보고서 소개"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.nanet.go.kr/attachfiles/carousel/1766390217987.jpg"
+                        data-url="https://www.nanet.go.kr/attachfiles/carousel/1766390217987.jpg"
+                        alt="세계헌법정보"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.nanet.go.kr/attachfiles/carousel/1760068720438.png"
+                        data-url="https://www.nanet.go.kr/attachfiles/carousel/1760068720438.png"
+                        alt="국회도서관 외국법률번역 데이터베이스"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.nanet.go.kr/attachfiles/carousel/1685514944852.jpg"
+                        data-url="https://www.nanet.go.kr/attachfiles/carousel/1685514944852.jpg"
+                        alt="국회의사당 전경"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.nanet.go.kr/attachfiles/carousel/1685514972520.jpg"
+                        data-url="https://www.nanet.go.kr/attachfiles/carousel/1685514972520.jpg"
+                        alt="국회도서관"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="banner-controls">
@@ -156,12 +198,10 @@
             </button>
           </div>
           <div class="banner-tabs">
-            <button class="banner-tab active">세계의 헌법</button>
+            <button class="banner-tab active">이슈 인포그래픽 : '2026 전망' 주요 보고서 소개</button>
+            <button class="banner-tab">세계헌법정보</button>
+            <button class="banner-tab">국회도서관 외국법률번역 데이터베이스</button>
             <button class="banner-tab">국회의사당</button>
-            <button class="banner-tab">국회도서관</button>
-            <button class="banner-tab">
-              브라스와 성악이 만나는 곳, 2025년 국회도서관 음악의 밤
-            </button>
           </div>
         </div>
       </div>
@@ -565,17 +605,35 @@
           <button class="plus pwz"><i class="fa-solid fa-plus"></i></button>
           <div class="webzine-main">
             <span class="webzine-badge">2025년 11월호</span>
-            <h3>[팩트북] 아르고스로 보는 글로벌 인구이동과 이민정책</h3>
+            <h3><i class="fa-solid fa-arrow-right"></i></h3>
           </div>
           <div class="webzine-list">
             <div class="webzine-item1">
-              <img src="https://www.nanet.go.kr/attachfiles/cardNews/1761027542880.jpg" alt="[팩트북] 아르고스로 보는 글로벌 인구이동과 이민정책" onerror="this.src=&quot;/images/popup/popup_default.png&quot;">
+              <img
+                src="https://www.nanet.go.kr/attachfiles/cardNews/1761027542880.jpg"
+                alt="[팩트북] 아르고스로 보는 글로벌 인구이동과 이민정책"
+                onerror="this.src = '/images/popup/popup_default.png'"
+              />
             </div>
             <div class="webzine-swiper">
-            
+                <div class="swiper Swiper-2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <img src="https://www.nanet.go.kr/attachfiles/popupimages/1769472645044.png" alt="귀차니를 위한 오디오북 '서평 읽는 날(NAL)'">
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="https://www.nanet.go.kr/attachfiles/popupimages/1769472645044.png" alt="귀차니를 위한 오디오북 '서평 읽는 날(NAL)'">
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="https://www.nanet.go.kr/attachfiles/popupimages/1769472645044.png" alt="귀차니를 위한 오디오북 '서평 읽는 날(NAL)'">
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+               </div>
             </div>
-          </div>
-        </div>
       </section>
     </main>
 
