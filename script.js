@@ -3,10 +3,15 @@
       spaceBetween: 10,
       slidesPerView: 4,
       freeMode: true,
+      loop: true,
       watchSlidesProgress: true,
     });
     const swiper2 = new Swiper(".main_swiper", {
       spaceBetween: 10,
+      effect: 'fade',
+      loop:true,
+      autoplay:{ delay: 2000
+     },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

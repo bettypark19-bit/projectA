@@ -306,8 +306,10 @@ button {
 
 .mainvisual_group {
   position: absolute;
-  top: 150px;
-  width: 100%;
+  top: 115px;
+  width: 1300px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 500px;
   z-index: 9999;
 }
