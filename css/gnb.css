@@ -4,25 +4,54 @@
 body {
   line-height: 1.75;
 }
-a {
+.dep1 a {
   text-decoration: none;
-  font-size: 20px;
-  color: #ddd;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  padding: 0 65px 0;
+  line-height: 80px;
+  white-space: nowrap;
 }
 
 h3 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
   letter-spacing: -1.5px;
 }
+
+/* ==============================================  */
+/* =======================메뉴인포=======================  */
+/* ==============================================  */
+
+.menu-info{
+  width: 400px;
+  background: #eee;
+  padding: 20px 30px;
+}
+
+.menu-info h2{
+  margin-bottom: 8px;
+}
+.menu-info p{
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+.dep2 li{
+  font-size: 15px;
+  color: #363636;
+}
+
 /* ==============================================  */
 /* =======================nav=======================  */
 /* ==============================================  */
 
 nav {
-  background: #333;
+  background: #ffffff;
   position: relative;
+  height: 80px;
   z-index: 999;
 }
 
@@ -48,10 +77,12 @@ text-align: center;
 
 .mega{
 width: 100vw;
-background-color: rgb(158, 161, 167);
+background-color: rgb(255, 255, 255);
 position: absolute;
 left: 0;
 height: 0;
+display: grid;
+grid-template-columns: 400px 1fr;
 overflow: hidden;
 transition: height 0.3s;
 z-index: 1000;
@@ -62,12 +93,13 @@ z-index: 1000;
 }
 
 .row{
-  display: flex;
-  max-width: 80%;
-  margin: auto;
-  gap: 10%;
-  text-align: center;
-  padding: 20px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0;
+  gap: 20px;
+  text-align: left;
+  padding: 30px 100px;
   justify-content: center;
   white-space: nowrap;
 }

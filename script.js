@@ -1,104 +1,20 @@
 // 배너 슬라이더
-let currentSlide = 0;
-const bannerItems = document.querySelectorAll(".banner-item");
-const bannerTabs = document.querySelectorAll(".banner-tab");
-let isPlaying = true;
-let slideInterval;
-
-function showSlide(index) {
-  bannerItems.forEach((item) => item.classList.remove("active"));
-  bannerTabs.forEach((tab) => tab.classList.remove("active"));
-
-  if (bannerItems[index]) {
-    bannerItems[index].classList.add("active");
-    bannerTabs[index].classList.add("active");
-  }
-}
-
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % bannerItems.length;
-  showSlide(currentSlide);
-}
-
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + bannerItems.length) % bannerItems.length;
-  showSlide(currentSlide);
-}
-
-function startAutoPlay() {
-  isPlaying = true;
-  slideInterval = setInterval(nextSlide, 5000);
-}
-
-function stopAutoPlay() {
-  isPlaying = false;
-  clearInterval(slideInterval);
-}
-//swiper-1
-const swiper1 = new Swiper(".Swiper-1", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop:true,
-  autoplay:{delay:2000},
-  speed: 1200,
-  effect: 'fade',
-});
-
-const swiper2 = new Swiper(".Swiper-2", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop:true,
-  autoplay:{delay:2000},
-  speed: 1200,
-});
-
-// 배너 컨트롤 버튼
-const bannerPrev = document.querySelector(".banner-prev");
-const bannerNext = document.querySelector(".banner-next");
-const bannerPlay = document.querySelector(".banner-play");
-
-if (bannerPrev) {
-  bannerPrev.addEventListener("click", () => {
-    stopAutoPlay();
-    prevSlide();
-    startAutoPlay();
-  });
-}
-
-if (bannerNext) {
-  bannerNext.addEventListener("click", () => {
-    stopAutoPlay();
-    nextSlide();
-    startAutoPlay();
-  });
-}
-
-if (bannerPlay) {
-  bannerPlay.addEventListener("click", () => {
-    if (isPlaying) {
-      stopAutoPlay();
-    } else {
-      startAutoPlay();
-    }
-  });
-}
-
-// 배너 탭
-bannerTabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => {
-    stopAutoPlay();
-    currentSlide = index;
-    showSlide(currentSlide);
-    startAutoPlay();
-  });
-});
-
-// 자동 재생 시작
-startAutoPlay();
+    const thumbSwiper = new Swiper(".thumb_swiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    const swiper2 = new Swiper(".main_swiper", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: thumbSwiper,
+      },
+    });
 
 // 상임위 버튼
 const committeeButtons = document.querySelectorAll(".committee-btn");
