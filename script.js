@@ -57,10 +57,9 @@ const swiper2 = new Swiper(".main_swiper", {
 const subswiper = new Swiper(".sub_swiper", {
   loop: true,
   autoplay: { delay: 2000 },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  pagination: {
+    el: ".swiper-pagination"
+  }
 });
 
 
