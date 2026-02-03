@@ -643,6 +643,7 @@ z-index: 1000;
         font-weight: 700;
       }
       .cuswiper .swiper-slide h3 {
+        display: block;
         width: 268px;
         height: 67px;
         font-size: 20px;
