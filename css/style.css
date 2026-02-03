@@ -669,8 +669,8 @@ button {
   object-fit: cover;
 }
 
-.cuswiper .swiper-button-next,
-.cuswiper .swiper-button-prev{
+.curation-slider .swiper-button-next,
+.curation-slider .swiper-button-prev{
   top: 100px;
   position: absolute;
 }
