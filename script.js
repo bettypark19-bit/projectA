@@ -64,6 +64,19 @@ const subswiper = new Swiper(".sub_swiper", {
 });
 
 
+//큐레이션 슬라이더
+      var swiper = new Swiper(".cuswiper", {
+        slidesPerView: 4,
+        loop: true,
+        spaceBetween: 40,
+        autoplay: { delay: 2000 },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+
 
 // 상임위 버튼
 const committeeButtons = document.querySelectorAll(".committee-btn");
