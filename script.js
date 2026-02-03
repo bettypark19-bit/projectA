@@ -1,9 +1,10 @@
 /* ==============================================  */
 /* =======================nav=======================  */
 /* ==============================================  */
-
+const topn = document.querySelector(".header-top")
 const nav = document.querySelector("nav");
 const dep1 = nav.querySelectorAll(".dep1");
+
 // mouse진입시 메뉴 열기
 dep1.forEach((el) => {
   const row = el.querySelector('.row');
