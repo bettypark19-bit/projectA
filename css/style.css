@@ -277,7 +277,6 @@ button {
   background-size: cover;
 }
 
-
 .banner-controls {
   position: absolute;
   right: 340px;
@@ -316,68 +315,80 @@ button {
 
 /* =======================main swiper=======================  */
 
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+.swiper-wrapper {
+  width: 1300px;
+  background-color: #fff;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .swiper-wrapper{
-      width: 1300px;
-      background-color: #fff;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.swiper {
+  width: 100%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    .swiper {
-      width: 100%;
-      height: 300px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
 
-    .swiper-slide {
-      background-size: cover;
-      background-position: center;
-    }
+.main_swiper {
+  height: 440px;
+  width: 1300px;
+}
 
-    .main_swiper {
-      height: 440px;
-      width: 1300px;
-    }
+.thumb_swiper {
+  height: 80px;
+  box-sizing: border-box;
+  background-color: white;
+  cursor: pointer;
+}
 
-    .thumb_swiper {
-      height: 80px;
-      box-sizing: border-box;
-    }
+.thumb_swiper .swiper-wrapper {
+  transition: none;
+}
 
-    .thumb_swiper .swiper-slide {
-      width: 325px !important;
-      height: 100%;
-      opacity: 0.4;
-    }
+.thumb_swiper .swiper-slide {
+  width: 325px !important;
+  height: 100%;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  letter-spacing: -1.5px;
+}
+.swiper-slide-thumb-active {
+  background-color: #020b3d !important;
+  color:white;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .thumb_swiper .swiper-slide-thumb-active {
-      opacity: 1;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.swiper-wrapper>.ss2 img{
+  object-fit: contain;
+}
 
 /* Header Bottom */
 .header-bottom {
@@ -1000,7 +1011,7 @@ button {
   left: 0px;
   width: 303px;
   height: 436px;
-  background: url('https://www.nanet.go.kr/attachfiles/webzine/1766473465112.jpg') no-repeat;
+  background: url("https://www.nanet.go.kr/attachfiles/webzine/1766473465112.jpg") no-repeat;
   background-size: cover;
   border-radius: 8px;
   border: 1px solid #ddd;
@@ -1031,18 +1042,18 @@ button {
   background: #0066a6;
 }
 
-.webzine-main:hover h3{
-    color: #0066a6;
+.webzine-main:hover h3 {
+  color: #0066a6;
   transform: translateX(10px);
 }
 
 .webzine-main h3 {
-    position: absolute;
-    right: 30px;
-    bottom: 36px;
-    font-size: 32px;
+  position: absolute;
+  right: 30px;
+  bottom: 36px;
+  font-size: 32px;
   color: #999;
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .webzine-list {

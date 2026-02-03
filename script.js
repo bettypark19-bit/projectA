@@ -1,25 +1,35 @@
 // 배너 슬라이더
-    const thumbSwiper = new Swiper(".thumb_swiper", {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      loop: true,
-      watchSlidesProgress: true,
-    });
-    const swiper2 = new Swiper(".main_swiper", {
-      spaceBetween: 10,
-      effect: 'fade',
-      loop:true,
-      autoplay:{ delay: 2000
-     },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: thumbSwiper,
-      },
-    });
+const thumbSwiper = new Swiper(".thumb_swiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  loop: true,
+  watchSlidesProgress: true,
+});
+
+const swiper2 = new Swiper(".main_swiper", {
+  spaceBetween: 10,
+  effect: "fade",
+  loop: true,
+  autoplay: { delay: 2000 },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: thumbSwiper,
+  },
+});
+
+const subswiper = new Swiper(".sub_swiper", {
+  loop: true,
+  autoplay: { delay: 2000 },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
 
 // 상임위 버튼
 const committeeButtons = document.querySelectorAll(".committee-btn");
