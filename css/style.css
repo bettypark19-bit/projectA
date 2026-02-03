@@ -460,8 +460,7 @@ z-index: 1000;
 .thumb_swiper .swiper-slide {
   width: 325px !important;
   height: 100%;
-  opacity: 0.4;
-  transition: opacity 0.3s ease;
+  opacity: 1;
   border: 2px solid transparent;
   display: flex;
   align-items: center;
@@ -631,6 +630,7 @@ z-index: 1000;
       }
 
       .cuswiper .swiper-slide {
+        display: grid;
         min-width: 330px;
         height: 200px;
         background: white;
