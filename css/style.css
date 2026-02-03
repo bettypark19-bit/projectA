@@ -482,6 +482,10 @@ button {
   object-fit: contain;
 }
 
+.swiper-button-next,.swiper-button-prev{
+  color: #999;
+}
+
 /* Header Bottom */
 .header-bottom {
   position: absolute;
@@ -663,6 +667,12 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.cuswiper .swiper-button-next,
+.cuswiper .swiper-button-prev{
+  top: 100px;
+  position: absolute;
 }
 
 .slider-prev,
