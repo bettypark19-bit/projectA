@@ -24,9 +24,9 @@ dep1.forEach((el) => {
 window.addEventListener('scroll',() => {
   console.log(window.scrollY);
 if(window.scrollY > nav.offsetTop){
-  nav.classList.add("sticky");
+  topn.classList.add("sticky");
 }else{
-  nav.classList.remove("sticky");
+  topn.classList.remove("sticky");
 }
 });
 
@@ -57,10 +57,10 @@ const swiper2 = new Swiper(".main_swiper", {
 const subswiper = new Swiper(".sub_swiper", {
   loop: true,
   autoplay: { delay: 2000 },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  pagination:{
+    el: ".swiper-pagination",
+    clickable:true,
+  }
 });
 
 
