@@ -1,7 +1,7 @@
 /* ==============================================  */
 /* =======================common=======================  */
 /* ==============================================  */
-body {
+.wrap {
   line-height: 1.75;
 }
 .dep1 a {
@@ -14,7 +14,7 @@ body {
   white-space: nowrap;
 }
 
-h3 {
+.col h3 {
   font-size: 18px;
   font-weight: 500;
   color: #000;
@@ -48,21 +48,21 @@ h3 {
 /* =======================nav=======================  */
 /* ==============================================  */
 
-nav {
+.wrap nav {
   background: #ffffff;
   position: relative;
   height: 80px;
   z-index: 999;
 }
 
-nav.sticky{
+.wrap nav.sticky{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.menu{
+.wrap nav .menu{
   display: flex;
   width: 100%;
   max-width: 80vw;

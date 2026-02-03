@@ -158,26 +158,119 @@ button {
   height: 28px;
 }
 
-.gnb-nav {
-  display: flex;
-  gap: 130px;
-  padding-left: 300px;
-  margin-left: auto;
-  margin-right: auto;
+/* ==============================================  */
+/* =======================common=======================  */
+/* ==============================================  */
+.wrap {
+  position: relative;
+  left: 400px;
+  line-height: 1.75;
 }
-
-.gnb-item {
+.dep1 a {
+  text-decoration: none;
   font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  transition: color 0.3s;
+  font-weight: 700;
+  color: #000;
+  padding: 0 65px 0;
+  line-height: 80px;
+  white-space: nowrap;
 }
 
-.gnb-item:hover {
-  color: #4b83c4;
+.col h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -1.5px;
+}
+
+/* ==============================================  */
+/* =======================메뉴인포=======================  */
+/* ==============================================  */
+
+.menu-info{
+  width: 400px;
+  background: #eee;
+  padding: 20px 30px;
+}
+
+.menu-info h2{
+  margin-bottom: 8px;
+}
+.menu-info p{
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+.dep2 li{
+  font-size: 15px;
+  color: #363636;
+}
+
+/* ==============================================  */
+/* =======================nav=======================  */
+/* ==============================================  */
+
+.wrap nav {
+  background: #ffffff;
+  position: relative;
+  height: 80px;
+  z-index: 999;
+}
+
+.wrap nav.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wrap nav .menu{
+  display: flex;
+  width: 100%;
+  max-width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+text-align: center;
+}
+
+.dep1{
+  width: calc(100% / 5);
+}
+
+.mega{
+width: 100vw;
+background-color: rgb(255, 255, 255);
+position: absolute;
+left: 0;
+height: 0;
+display: grid;
+grid-template-columns: 400px 1fr;
+overflow: hidden;
+transition: height 0.3s;
+z-index: 1000;
+}
+
+.dep1.on .mega{
+  position: absolute;
+  left: -460px;
+  height: 500px;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0;
+  gap: 20px;
+  text-align: left;
+  padding: 30px 100px;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .menu-btn {
+  position: relative;
+  right: -500px;
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -310,7 +403,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   height: 500px;
-  z-index: 9999;
+  z-index: 9;
 }
 
 /* =======================main swiper=======================  */
