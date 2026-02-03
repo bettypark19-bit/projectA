@@ -65,17 +65,29 @@ const subswiper = new Swiper(".sub_swiper", {
 
 
 //큐레이션 슬라이더
-      var swiper = new Swiper(".cuswiper", {
+      const swiperc = new Swiper(".cuswiper", {
         slidesPerView: 4,
         loop: true,
         spaceBetween: 40,
         autoplay: { delay: 2000 },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+                navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
 
+
+// 키워드 슬라이더
+      const swiperk = new Swiper(".keyswiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: { delay: 1500 },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
 
 // 상임위 버튼

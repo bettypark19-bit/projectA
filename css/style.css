@@ -35,6 +35,8 @@ h2 {
 }
 
 body {
+  width: 100%;
+  overflow-x: hidden;
   font-family:
     "Noto Sans KR",
     -apple-system,
@@ -692,41 +694,35 @@ z-index: 1000;
   padding: 30px 240px;
 }
 
-.keywords-slider {
-  padding: 0 50px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 50px;
-  margin-top: 16px;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 7px;
-  border: 1px solid #dbdbdb;
-  background-color: #fff;
-}
+      .keyswiper {
+        padding: 0 50px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        margin-top: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 7px;
+        border: 1px solid #dbdbdb;
+        background-color: #fff;
+      }
 
-.keywords-list {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
+      .swiper-wrapper {
+        display: flex;
+      }
 
-.keyword-tag {
-  margin-right: 58px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 22px;
-  font-weight: 500;
-  white-space: nowrap;
-  transition: all 0.3s ease-in-out;
-}
+      .keyswiper .swiper-slide {
+        margin-right: 58px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 22px;
+        font-weight: 500;
+        white-space: nowrap;
+      }
 
-.keyword-tag:hover {
-  background: #c2b0a2;
-}
+
 
 /* 신간도서 */
 .books-section {
